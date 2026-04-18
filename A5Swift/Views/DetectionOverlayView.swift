@@ -16,7 +16,7 @@ struct DetectionOverlayView: View {
                         in: proxy.size
                     )
 
-                    EmojiOverlayView(detection: detection)
+                    TextOverlayView(detection: detection)
                         .frame(width: rect.width, height: rect.height)
                         .offset(x: rect.minX, y: rect.minY)
                 }
@@ -45,29 +45,27 @@ struct DetectionOverlayView: View {
     }
 }
 
-// MARK: - Floating Emoji Overlay
+// MARK: - Floating Text Overlay
 
-private struct EmojiOverlayView: View {
+private struct TextOverlayView: View {
     let detection: Detection
 
     var body: some View {
-        VStack(spacing: 4) {
-            // Large floating emoji
-            Text(detection.emoji)
-                .font(.system(size: 64))
-                .shadow(color: .black.opacity(0.5), radius: 4, x: 0, y: 2)
+        HStack(spacing: 4) {
+            Text(detection.label.capitalized)
+                .font(.system(size: 11, weight: .bold))
+                .foregroundStyle(.green)
 
-            // Optional distance label below it
             if let distanceText = detection.distanceCategoryText {
+                Text("•")
+                    .font(.system(size: 9))
+                    .foregroundStyle(.green.opacity(0.8))
                 Text(distanceText)
-                    .font(.system(size: 14, weight: .bold))
-                    .foregroundStyle(.white)
-                    .padding(.horizontal, 8)
-                    .padding(.vertical, 4)
-                    .background(.black.opacity(0.6))
-                    .clipShape(Capsule())
+                    .font(.system(size: 10, weight: .semibold))
+                    .foregroundStyle(.green)
             }
         }
+        .shadow(color: .black.opacity(0.8), radius: 2, x: 0, y: 1)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
     }
 }

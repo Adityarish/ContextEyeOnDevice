@@ -1,0 +1,8 @@
+[
+  {
+    "name": "YOLOv9-T (Bundled)",
+    "url": "bundle://yolov9t_coreml",
+    "size": "4.7 MB",
+    "classes": 80
+  }
+]

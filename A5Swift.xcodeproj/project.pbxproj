@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00000000000000000000201 /* A5SwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000101 /* A5SwiftApp.swift */; };
+		A00000000000000000000202 /* ModelRegistryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000102 /* ModelRegistryItem.swift */; };
+		A00000000000000000000203 /* Detection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000103 /* Detection.swift */; };
+		A00000000000000000000204 /* ModelListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000104 /* ModelListViewModel.swift */; };
+		A00000000000000000000205 /* DetectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000105 /* DetectionViewModel.swift */; };
+		A00000000000000000000206 /* ModelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000106 /* ModelListView.swift */; };
+		A00000000000000000000207 /* ModelRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000107 /* ModelRowView.swift */; };
+		A00000000000000000000208 /* DetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000108 /* DetectionView.swift */; };
+		A00000000000000000000209 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000109 /* CameraPreviewView.swift */; };
+		A0000000000000000000020A /* DetectionOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000010A /* DetectionOverlayView.swift */; };
+		A0000000000000000000020B /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000010B /* AppEnvironment.swift */; };
+		A0000000000000000000020C /* ModelRegistryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000010C /* ModelRegistryService.swift */; };
+		A0000000000000000000020D /* ModelDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000010D /* ModelDownloadService.swift */; };
+		A0000000000000000000020E /* ModelStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000010E /* ModelStorageService.swift */; };
+		A0000000000000000000020F /* ObjectDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000010F /* ObjectDetectionService.swift */; };
+		A00000000000000000000210 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000110 /* CameraService.swift */; };
+		A00000000000000000000211 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000111 /* SpeechService.swift */; };
+		A00000000000000000000212 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000112 /* AppError.swift */; };
+		A00000000000000000000213 /* BoundingBoxMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000113 /* BoundingBoxMapper.swift */; };
+		A00000000000000000000219 /* DepthEstimationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000119 /* DepthEstimationService.swift */; };
+		A00000000000000000000214 /* model_registry.json in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000114 /* model_registry.json */; };
+		A00000000000000000000215 /* yolov9t_coreml.mlpackage in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000115 /* yolov9t_coreml.mlpackage */; };
+		A00000000000000000000218 /* depth_anything_v2_small.mlpackage in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000118 /* depth_anything_v2_small.mlpackage */; };
+		A00000000000000000000216 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000116 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A000000000000000000000D /* A5Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A5Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000101 /* A5SwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A5SwiftApp.swift; sourceTree = "<group>"; };
+		A00000000000000000000102 /* ModelRegistryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRegistryItem.swift; sourceTree = "<group>"; };
+		A00000000000000000000103 /* Detection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detection.swift; sourceTree = "<group>"; };
+		A00000000000000000000104 /* ModelListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelListViewModel.swift; sourceTree = "<group>"; };
+		A00000000000000000000105 /* DetectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionViewModel.swift; sourceTree = "<group>"; };
+		A00000000000000000000106 /* ModelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelListView.swift; sourceTree = "<group>"; };
+		A00000000000000000000107 /* ModelRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRowView.swift; sourceTree = "<group>"; };
+		A00000000000000000000108 /* DetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionView.swift; sourceTree = "<group>"; };
+		A00000000000000000000109 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		A0000000000000000000010A /* DetectionOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionOverlayView.swift; sourceTree = "<group>"; };
+		A0000000000000000000010B /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		A0000000000000000000010C /* ModelRegistryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRegistryService.swift; sourceTree = "<group>"; };
+		A0000000000000000000010D /* ModelDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDownloadService.swift; sourceTree = "<group>"; };
+		A0000000000000000000010E /* ModelStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelStorageService.swift; sourceTree = "<group>"; };
+		A0000000000000000000010F /* ObjectDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionService.swift; sourceTree = "<group>"; };
+		A00000000000000000000110 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		A00000000000000000000111 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		A00000000000000000000112 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		A00000000000000000000113 /* BoundingBoxMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingBoxMapper.swift; sourceTree = "<group>"; };
+		A00000000000000000000119 /* DepthEstimationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthEstimationService.swift; sourceTree = "<group>"; };
+		A00000000000000000000114 /* model_registry.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = model_registry.json; sourceTree = "<group>"; };
+		A00000000000000000000115 /* yolov9t_coreml.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = yolov9t_coreml.mlpackage; sourceTree = "<group>"; };
+		A00000000000000000000118 /* depth_anything_v2_small.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = depth_anything_v2_small.mlpackage; sourceTree = "<group>"; };
+		A00000000000000000000116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		A00000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000004 /* A5Swift */,
+				A00000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A00000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A000000000000000000000D /* A5Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000004 /* A5Swift */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000005 /* Models */,
+				A00000000000000000000006 /* ViewModels */,
+				A00000000000000000000007 /* Views */,
+				A00000000000000000000008 /* Services */,
+				A00000000000000000000009 /* Utilities */,
+				A0000000000000000000000A /* Resources */,
+				A0000000000000000000000B /* Assets */,
+				A00000000000000000000101 /* A5SwiftApp.swift */,
+			);
+			path = A5Swift;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000005 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000102 /* ModelRegistryItem.swift */,
+				A00000000000000000000103 /* Detection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000006 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000104 /* ModelListViewModel.swift */,
+				A00000000000000000000105 /* DetectionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000007 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000106 /* ModelListView.swift */,
+				A00000000000000000000107 /* ModelRowView.swift */,
+				A00000000000000000000108 /* DetectionView.swift */,
+				A00000000000000000000109 /* CameraPreviewView.swift */,
+				A0000000000000000000010A /* DetectionOverlayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000008 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A0000000000000000000010B /* AppEnvironment.swift */,
+				A0000000000000000000010C /* ModelRegistryService.swift */,
+				A0000000000000000000010D /* ModelDownloadService.swift */,
+				A0000000000000000000010E /* ModelStorageService.swift */,
+				A0000000000000000000010F /* ObjectDetectionService.swift */,
+				A00000000000000000000110 /* CameraService.swift */,
+				A00000000000000000000111 /* SpeechService.swift */,
+				A00000000000000000000119 /* DepthEstimationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000009 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000112 /* AppError.swift */,
+				A00000000000000000000113 /* BoundingBoxMapper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A0000000000000000000000A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000114 /* model_registry.json */,
+				A00000000000000000000115 /* yolov9t_coreml.mlpackage */,
+				A00000000000000000000118 /* depth_anything_v2_small.mlpackage */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A0000000000000000000000B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000116 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0000000000000000000000C /* A5Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000014 /* Build configuration list for PBXNativeTarget "A5Swift" */;
+			buildPhases = (
+				A0000000000000000000000F /* Sources */,
+				A00000000000000000000010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = A5Swift;
+			productName = A5Swift;
+			productReference = A000000000000000000000D /* A5Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A0000000000000000000000C = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = A00000000000000000000011 /* Build configuration list for PBXProject "A5Swift" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A00000000000000000000002;
+			productRefGroup = A00000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0000000000000000000000C /* A5Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000000010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000216 /* Assets.xcassets in Resources */,
+				A00000000000000000000214 /* model_registry.json in Resources */,
+				A00000000000000000000218 /* depth_anything_v2_small.mlpackage in Resources */,
+				A00000000000000000000215 /* yolov9t_coreml.mlpackage in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0000000000000000000000F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000201 /* A5SwiftApp.swift in Sources */,
+				A00000000000000000000202 /* ModelRegistryItem.swift in Sources */,
+				A00000000000000000000203 /* Detection.swift in Sources */,
+				A00000000000000000000204 /* ModelListViewModel.swift in Sources */,
+				A00000000000000000000205 /* DetectionViewModel.swift in Sources */,
+				A00000000000000000000206 /* ModelListView.swift in Sources */,
+				A00000000000000000000207 /* ModelRowView.swift in Sources */,
+				A00000000000000000000208 /* DetectionView.swift in Sources */,
+				A00000000000000000000209 /* CameraPreviewView.swift in Sources */,
+				A0000000000000000000020A /* DetectionOverlayView.swift in Sources */,
+				A0000000000000000000020B /* AppEnvironment.swift in Sources */,
+				A0000000000000000000020C /* ModelRegistryService.swift in Sources */,
+				A0000000000000000000020D /* ModelDownloadService.swift in Sources */,
+				A0000000000000000000020E /* ModelStorageService.swift in Sources */,
+				A0000000000000000000020F /* ObjectDetectionService.swift in Sources */,
+				A00000000000000000000210 /* CameraService.swift in Sources */,
+				A00000000000000000000211 /* SpeechService.swift in Sources */,
+				A00000000000000000000212 /* AppError.swift in Sources */,
+				A00000000000000000000213 /* BoundingBoxMapper.swift in Sources */,
+				A00000000000000000000219 /* DepthEstimationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A00000000000000000000012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A00000000000000000000013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A00000000000000000000015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QKPS56S48P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access is required to run live object detection.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aditya.eye;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A00000000000000000000016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QKPS56S48P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access is required to run live object detection.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aditya.eye;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00000000000000000000011 /* Build configuration list for PBXProject "A5Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000012 /* Debug */,
+				A00000000000000000000013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000014 /* Build configuration list for PBXNativeTarget "A5Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000015 /* Debug */,
+				A00000000000000000000016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000000000000000000001 /* Project object */;
+}
